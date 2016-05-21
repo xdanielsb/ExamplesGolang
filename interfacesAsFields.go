@@ -13,7 +13,7 @@ func main() {
 }
 
 type Personaje interface {
-	speak()
+	fight()
 }
 
 type Dwarf struct {
@@ -25,11 +25,11 @@ type Elf struct {
 }
 
 func (d Dwarf) fight() {
-	fmt.Printf("I %s am fighting with my maze", d.name)
+	fmt.Printf("I am %s fighting with my maze \n", d.name)
 }
 
 func (e Elf) fight() {
-	fmt.Printf("I %s am fighting with my arc", d.name)
+	fmt.Printf("I am %s fighting with my arc \n", e.name)
 }
 
 func fighting(warriors ...Personaje) {
