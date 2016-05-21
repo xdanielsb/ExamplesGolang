@@ -44,5 +44,4 @@ func goThroughArray() {
 		total += value
 	}
 	fmt.Println("The sum of the array is ", total)
-
 }
